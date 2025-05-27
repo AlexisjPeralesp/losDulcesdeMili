@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="index.html"><img src="imagenes/sin-fondo.png" alt="Logo Dulces de Mili" class="logo"></a>            
+        </div>
+        <nav>
+            <ul>
+                <li><a class="navegacion" href="index.html">Inicio</a></li>
+                <li><a class="navegacion" href="productos.html">Productos</a></li>
+                <li><a class="navegacion" href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a class="navegacion" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Dejanos Tu Consulta</h2>
+
+
+        <form action="https://formspree.io/f/maneaakw" method="POST">
+
+            <div class="campo">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="nombre" placeholder="Nombre..." required>
+            </div>
+
+            <div class="campo">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="Correo electrónico..." required>
+            </div>
+
+            <div class="campo">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" name="telefono" placeholder="Teléfono...">
+            </div>
+
+            <div class="campo">
+                <i class="fa-solid fa-comment"></i>
+                <textarea name="mensaje" placeholder="Escriba su mensaje aquí..." rows="4" required></textarea>
+            </div>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i> Enviar
+            </button>
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <h2>Creado con <i class="fas fa-heart"></i> para compartir dulzura.</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/losdulcesdemili.arg/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tuperfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5491123923975" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>email: losdulcesdemili@gmail.com</p>
+            <p>&copy; 2025 Los Dulces de Mili - Todos los derechos reservados.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
