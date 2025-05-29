@@ -50,7 +50,7 @@ li {
 .logo {
     max-width: 280px;
     width: 100%;
-    height: auto;
+    height: 220px;
     display: block;
     object-fit: contain;
 }
@@ -119,7 +119,64 @@ body{
     pointer-events: auto;
 }
 
+/* PAGINA DE PRODUCTOS*/
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product{
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    background-color: #F3CFDA;
+}
+.product img{
+    max-width: 280px;
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: contain;
+}
+.product h3{
+    margin: 10px 0 5px;
+    color: #C60FBF;    
+}
 
+.product p{
+    font-size: 0.95em;
+    color: #555;    
+}
+.product:hover{
+    transform: scale(1.1);
+}
+
+/*PAGINA DE RESEÑAS*/
+.opinion-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.opinion{
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    background-color: #F3CFDA;
+}
+.opinion:hover{
+    transform: scale(1.05);
+}
+.opinion i{
+    color: darkgoldenrod;
+    
+
+}
 
 /* PAGINA DE CONTACTO*/
 form {
@@ -179,11 +236,25 @@ textarea::placeholder {
     font-size: 1em;
     color: #999; 
 }
+@media (max-width: 768px) {
+form {
+    padding: 10px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 8px 8px 8px 30px;
+    font-size: 0.9em;
+}
+button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+}
+}
 
 
 
 /*footer*/
-
 footer {
     background-color: #3D36BF;
     color: white;
@@ -191,7 +262,7 @@ footer {
     padding: 20px 10px;
     font-family: sans-serif;
     font-size: 0.9rem;
-    
+    margin: 20px 0 0 0;
 }
 
 .footer-contenido {
@@ -200,8 +271,7 @@ footer {
 }
 
 .fa-heart {
-    color: red;
-    
+    color: red;    
 }
 
 
