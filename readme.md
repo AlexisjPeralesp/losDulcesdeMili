@@ -21,5 +21,3 @@ Una aplicación web para mostrar productos, reseñas y recibir pedidos de gallet
 - Flexbox, Grid y Media Query
 - Formspree (para el formulario)
 - netlify (hosting)
-
-## Cómo lo ppodes mirar:
